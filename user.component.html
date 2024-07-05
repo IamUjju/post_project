@@ -1,0 +1,9 @@
+<div>
+    <div *ngFor="let user of user">
+        <div>{{user.id}}</div>
+        <div>{{user.email}}</div>
+        <div>{{user.name}}</div>
+        <img src="{{user.avatar}}" alt="">
+        <button (click)="userDetail(user)" >Edit</button>
+    </div>
+</div>

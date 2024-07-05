@@ -1,0 +1,14 @@
+<p>userdetail works!</p>
+
+<div>
+    <div>{{user.id}}</div>
+    <div>{{user.email}}</div>
+    <div>{{user.name}}</div>
+    <img src="{{user.avatar}}" alt="">
+</div>
+
+<form [formGroup]="userDetail" (ngSubmit)="saveUser()">
+    <label for="name"></label>
+    <input type="text" id="name" formControlName="name">
+    <button type="submit">Edit</button>
+</form>
